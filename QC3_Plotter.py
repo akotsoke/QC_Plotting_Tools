@@ -126,6 +126,8 @@ for f in args.filename:
 	gr_Atm.GetYaxis().SetTitleOffset(1.1)
 
 	# For X axis
+	gr_Atm.GetXaxis().SetRangeUser(0,3600)
+	gr_Atm.GetXaxis().SetNdivisions(505)
 	gr_Atm.GetXaxis().SetLabelOffset(999)
 	gr_Atm.GetXaxis().SetLabelSize(0)
 	gr_Atm.GetXaxis().SetTickLength(0)
