@@ -126,17 +126,9 @@ for f in args.filename:
 	gr_Atm.GetYaxis().SetTitleOffset(1.1)
 
 	# For X axis
-	gr_Atm.GetXaxis().SetNdivisions(505)
-	gr_Atm.GetXaxis().SetRangeUser(0,3600)
-	gr_Atm.GetXaxis().SetTitleSize(0.06)
-	gr_Atm.GetXaxis().SetLabelSize(0.05)
-	gr_Atm.GetXaxis().SetLabelOffset(0.007)
-	gr_Atm.GetXaxis().SetLabelFont(42)
-	gr_Atm.GetXaxis().SetLabelColor(1)
-	gr_Atm.GetXaxis().SetTitleOffset(0.9)
-	gr_Atm.GetXaxis().SetAxisColor(1)
-	r.TStyle().SetStripDecimals(r.kTRUE)
-	gr.GetXaxis().SetTickLength(0.03)
+	gr_Atm.GetXaxis().SetLabelOffset(999)
+	gr_Atm.GetXaxis().SetLabelSize(0)
+	gr_Atm.GetXaxis().SetTickLength(0)
 	r.TStyle().SetPadTickX(1)
 
 
@@ -228,7 +220,7 @@ for f in args.filename:
 	a = str(f)
 	a= a.replace(b,"png")
 	#print a
-	#print str(f)
+	#aprint str(f)
 
 	canv.SaveAs(str(a))
 
