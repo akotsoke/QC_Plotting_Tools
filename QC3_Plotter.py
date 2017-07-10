@@ -96,6 +96,7 @@ for f in args.filename:
 	gr.SetMarkerStyle(20)
 	gr.SetMarkerSize(0.8)
 	gr.SetMarkerColor(r.kBlue)
+	gr.SetLineColor(r.kBlue)
 	gr.SetLineStyle(1)
 
 
@@ -106,6 +107,7 @@ for f in args.filename:
 	gr_T.SetMarkerStyle(20)
 	gr_T.SetMarkerSize(0.8)
 	gr_T.SetMarkerColor(r.kOrange)
+	gr_T.SetLineColor(r.kOrange)
 	gr_T.SetLineStyle(1)
 	gr_T.Draw("PSAME")
 
@@ -117,6 +119,7 @@ for f in args.filename:
 	gr_Atm.SetMarkerStyle(20)
 	gr_Atm.SetMarkerSize(0.8)
 	gr_Atm.SetMarkerColor(r.kGray)
+	gr_Atm.SetLineColor(r.kGray)
 	gr_Atm.SetLineStyle(1)
 	gr_Atm.SetTitle("")
 	gr_Atm.Draw("PAY+")
